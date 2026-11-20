@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Portafolio de Laura, productora multimedia especializada en fotografía, branding, ilustración y diseño web.">
+    <title>Laura | Productora Multimedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENTRADA FOTOGRÁFICA AÑADIDA: no modifica la estructura original -->
+    <div class="camera-intro" id="camera-intro" aria-label="Entrada fotográfica del portafolio">
+        <a class="camera-intro-skip" id="camera-intro-skip" href="#inicio">Saltar</a>
+        <div class="camera-intro-content">
+            <div class="camera-photo-wrap">
+                <img src="images/3.jpg" alt="Fotografía de entrada del portafolio" class="camera-intro-photo">
+                <div class="camera-focus-frame" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+            <p class="camera-intro-brand">LAURA · PRODUCTORA MULTIMEDIA</p>
+            <h1 class="camera-intro-title">Ideas que toman <em>forma.</em></h1>
+            <div class="camera-intro-line" aria-hidden="true"></div>
+            <p class="camera-intro-note">Fotografía · Branding · Ilustración · Web</p>
+        </div>
+        <div class="camera-intro-flash" aria-hidden="true"></div>
+    </div>
+    <script id="camera-intro-controller">
+        (function () {
+            var intro = document.getElementById('camera-intro');
+            var skip = document.getElementById('camera-intro-skip');
+            if (!intro) return;
+            function closeIntro() {
+                intro.classList.add('camera-intro-closing');
+                document.body.classList.remove('camera-intro-active');
+                window.setTimeout(function () {
+                    if (intro && intro.parentNode) intro.parentNode.removeChild(intro);
+                }, 550);
+            }
+            document.body.classList.add('camera-intro-active');
+            if (skip) skip.addEventListener('click', closeIntro);
+            window.setTimeout(closeIntro, 2800);
+        }());
+    </script>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"></div>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="header"><a href="#inicio" class="brand"><img src="images/logo.png"
+                alt="Laura, Productora Multimedia"></a><button class="menu" aria-expanded="false"
+            aria-controls="nav">Menú</button>
+        <nav id="nav" aria-label="Navegación principal"><a href="#sobre-mi">Sobre mí</a><a
+                href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a class="nav-cta"
+                href="#contacto">Hablemos</a></nav>
+    </header>
+    <main id="contenido">
+        <section class="hero reveal" id="inicio">
+            <div class="aurora aurora-one"></div>
+            <div class="aurora aurora-two"></div>
+            <div class="hero-copy"><span class="eyebrow">Fotografía · Branding · Ilustración · Web</span>
+                <h1>Ideas que toman <em>forma.</em></h1>
+                <p>Creo universos visuales auténticos para personas y marcas que quieren conectar, destacar y crecer.
+                </p>
+                <div class="actions"><a class="btn primary" href="#proyectos">Explorar proyectos</a><a
+                        class="btn secondary" href="#contacto">Cuéntame tu idea</a></div>
+                <ul class="stats">
+                    <li><strong>3</strong><span>Disciplinas Creativas</span></li>
+                    <li><strong>99%</strong><span>Identidad a Medida</span></li>
+                    <li><strong>360°</strong><span>Visión Multimedia</span></li>
+                </ul>
+            </div>
+            <div class="hero-art">
+
+    <div class="orbit" aria-hidden="true"></div>
+
+    <div class="lens photo-lens">
+        <img
+            src="images/2.jpeg"
+            alt="Retrato creativo para la presentación del portafolio"
+        >
+    </div>
+
+    <span class="spark s1" aria-hidden="true">✦</span>
+    <span class="spark s2" aria-hidden="true">✦</span>
+
+    <div class="tag tag1">Captura</div>
+    <div class="tag tag2">Crea</div>
+    <div class="tag tag3">Transforma</div>
+
+</div>
+</section>
+<section class="about reveal" id="sobre-mi">
+
+    <div class="portrait-column">
+
+        <div class="portrait-frame">
+
+            <img src="images/yo.jpeg" alt="Retrato creativo para la sección Sobre mí">
+        </div>
+        <span class="portrait-badge">
+            Creativa · Adaptable · Resiliente
+        </span>
+    </div>
+    <div class="about-content">
+        <span class="section-kicker">
+            Sobre mí
+        </span>
+
+        <h2>
+            Creo, conecto y transformo.
+        </h2>
+
+        <p>
+            Soy Laura, productora multimedia. La fotografía es mi
+            punto de partida para descubrir historias; el branding
+            les da identidad, la ilustración amplía sus posibilidades
+            y el diseño web las convierte en experiencias funcionales.
+        </p>
+
+        <p>
+            Trabajo con una mirada diligente, cercana y flexible
+            para que cada proyecto tenga una voz propia y se adapte
+            a las personas que necesita conectar.
+        </p>
+        <div class="traits">
+            <span>Adobe Illustrator</span>
+            <span>Adobe Premiere Pro</span>
+            <span>Adobe After Effects</span>
+        </div>
+    </div>
+</section>
+        </section>
+        <section class="services reveal" id="servicios">
+            <div class="section-head">
+                <div><span class="section-kicker">Lo que hago</span>
+                    <h2>Un estudio, cuatro formas de contar tu historia.</h2>
+                </div>
+                <p>Cada servicio puede funcionar de forma independiente o integrarse en una solución completa.</p>
+            </div>
+            <div class="service-grid">
+                <article class="service tilt-card purple">
+                    <div class="icon camera" aria-hidden="true"></div><span>01</span>
+                    <h3>Fotografía</h3>
+                    <p>Retrato creativo, marca personal, producto y contenido editorial con una mirada natural y
+                        dinámica.</p><a href="#contacto">Crear una sesión →</a>
+                </article>
+                <article class="service tilt-card coral">
+                    <div class="icon pen" aria-hidden="true">✎</div><span>02</span>
+                    <h3>Ilustración</h3>
+                    <p>Personajes, piezas editoriales, stickers y recursos gráficos que aportan personalidad.</p><a
+                        href="#contacto">Ilustrar una idea →</a>
+                </article>
+                <article class="service tilt-card teal">
+                    <div class="icon browser" aria-hidden="true"></div><span>03</span>
+                    <h3>Diseño web</h3>
+                    <p>Landing pages y portafolios responsivos, accesibles y preparados para comunicar con claridad.</p>
+                    <a href="#contacto">Crear un sitio →</a>
+                </article>
+                <article class="service tilt-card yellow">
+                    <div class="icon nodes" aria-hidden="true">⌬</div><span>04</span>
+                    <h3>Branding</h3>
+                    <p>Estrategia, logotipo, paleta y sistemas visuales que convierten una esencia en una marca
+                        reconocible.</p><a href="#contacto">Construir una marca →</a>
+                </article>
+            </div>
+        </section>
+        <section class="projects reveal" id="proyectos">
+            <div class="section-head">
+                <div><span class="section-kicker">Proyectos seleccionados</span>
+                    <h2>Ideas convertidas en experiencias.</h2>
+                </div>
+                <div class="filters" aria-label="Categorías"><button
+                        class="active">Concepto</button><button>Identidad</button><button>Diseño</button><button>Experiencia</button>
+                </div>
+            </div>
+            <div class="project-grid">
+                <article class="project tilt-card p1">
+                    <div class="project-visual"><span>Narrativa visual</span></div>
+                    <div><small>FOTOGRAFÍA</small>
+                        <h3>Instantes con intención ✨</h3>
+                        <p>Dirección visual, producción y edición</p>
+                        <a class="project-action" href="#galeria-fotografia">Ver fotografías →</a>
+                    </div>
+                </article>
+                <article class="project tilt-card p2">
+                    <div class="project-visual"><span>Identidad visual</span></div>
+                    <div><small>BRANDING</small>
+                        <h3>Una marca con movimiento</h3>
+                        <p>Estrategia, símbolo y sistema social para un emprendimiento creativo.</p>
+                        <a class="project-action" href="#manual-branding">Ver manual de marca →</a>
+                    </div>
+                </article>
+                <article class="project tilt-card p3">
+                    <div class="project-visual"><span>Experiencia digital</span></div>
+                    <div><small>DISEÑO WEB</small>
+                        <h3>Portafolio que convierte</h3>
+                        <p>Diseño mobile-first, arquitectura clara y narrativa enfocada en proyectos.</p>
+                        <a class="project-action" href="#proyecto-web">Ver proyecto web →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             DETALLE DEL PROYECTO FOTOGRÁFICO
+        ====================================================== -->
+        <section class="portfolio-detail photography-detail" id="galeria-fotografia">
+            <div class="detail-heading">
+                <div>
+                    <span class="section-kicker">Proyecto fotográfico</span>
+                    <h2>Miradas, detalles y ciudad.</h2>
+                </div>
+                <p>Una selección de ocho fotografías que explora naturaleza, color, producto y escenas urbanas.</p>
+            </div>
+
+            <div class="photo-carousel" aria-label="Galería de proyectos fotográficos">
+                <input class="carousel-control" type="radio" name="portfolio-photo-carousel" id="photo-slide-1" checked>
+                <input class="carousel-control" type="radio" name="portfolio-photo-carousel" id="photo-slide-2">
+                <input class="carousel-control" type="radio" name="portfolio-photo-carousel" id="photo-slide-3">
+                <input class="carousel-control" type="radio" name="portfolio-photo-carousel" id="photo-slide-4">
+                <input class="carousel-control" type="radio" name="portfolio-photo-carousel" id="photo-slide-5">
+                <input class="carousel-control" type="radio" name="portfolio-photo-carousel" id="photo-slide-6">
+                <input class="carousel-control" type="radio" name="portfolio-photo-carousel" id="photo-slide-7">
+                <input class="carousel-control" type="radio" name="portfolio-photo-carousel" id="photo-slide-8">
+
+                <div class="carousel-stage">
+                    <figure class="carousel-slide carousel-slide-1">
+                        <img class="carousel-image carousel-image-contain" src="images/fotografia/retrato-01.jpg" alt="Detalle de hojas verdes y vegetación" loading="lazy">
+                        <figcaption>Naturaleza · Detalles y textura</figcaption>
+                        <label class="carousel-arrow carousel-arrow-left" for="photo-slide-8" aria-label="Ver fotografía anterior">‹</label>
+                        <label class="carousel-arrow carousel-arrow-right" for="photo-slide-2" aria-label="Ver fotografía siguiente">›</label>
+                    </figure>
+                    <figure class="carousel-slide carousel-slide-2">
+                        <img class="carousel-image carousel-image-contain" src="images/fotografia/retrato-02.jpg" alt="Árbol y entorno urbano en blanco y negro" loading="lazy">
+                        <figcaption>Ciudad · Blanco y negro</figcaption>
+                        <label class="carousel-arrow carousel-arrow-left" for="photo-slide-1" aria-label="Ver fotografía anterior">‹</label>
+                        <label class="carousel-arrow carousel-arrow-right" for="photo-slide-3" aria-label="Ver fotografía siguiente">›</label>
+                    </figure>
+                    <figure class="carousel-slide carousel-slide-3">
+                        <img class="carousel-image carousel-image-contain" src="images/fotografia/retrato-03.jpg" alt="Flor tropical roja rodeada de vegetación" loading="lazy">
+                        <figcaption>Naturaleza · Color tropical</figcaption>
+                        <label class="carousel-arrow carousel-arrow-left" for="photo-slide-2" aria-label="Ver fotografía anterior">‹</label>
+                        <label class="carousel-arrow carousel-arrow-right" for="photo-slide-4" aria-label="Ver fotografía siguiente">›</label>
+                    </figure>
+                    <figure class="carousel-slide carousel-slide-4">
+                        <img class="carousel-image" src="images/fotografia/retrato-04.jpg" alt="Detalle de frutos rojos entre hojas" loading="lazy">
+                        <figcaption>Naturaleza · Contraste y profundidad</figcaption>
+                        <label class="carousel-arrow carousel-arrow-left" for="photo-slide-3" aria-label="Ver fotografía anterior">‹</label>
+                        <label class="carousel-arrow carousel-arrow-right" for="photo-slide-5" aria-label="Ver fotografía siguiente">›</label>
+                    </figure>
+                    <figure class="carousel-slide carousel-slide-5">
+                        <img class="carousel-image carousel-image-contain" src="images/fotografia/retrato-05.jpeg" alt="Fotografía de producto con frasco y elementos decorativos" loading="lazy">
+                        <figcaption>Producto · Composición y dirección visual</figcaption>
+                        <label class="carousel-arrow carousel-arrow-left" for="photo-slide-4" aria-label="Ver fotografía anterior">‹</label>
+                        <label class="carousel-arrow carousel-arrow-right" for="photo-slide-6" aria-label="Ver fotografía siguiente">›</label>
+                    </figure>
+                    <figure class="carousel-slide carousel-slide-6">
+                        <img class="carousel-image" src="images/fotografia/retrato-06.jpg" alt="Frutos rojos con fondo desenfocado" loading="lazy">
+                        <figcaption>Naturaleza · Enfoque selectivo</figcaption>
+                        <label class="carousel-arrow carousel-arrow-left" for="photo-slide-5" aria-label="Ver fotografía anterior">‹</label>
+                        <label class="carousel-arrow carousel-arrow-right" for="photo-slide-7" aria-label="Ver fotografía siguiente">›</label>
+                    </figure>
+                    <figure class="carousel-slide carousel-slide-7">
+                        <img class="carousel-image carousel-image-contain" src="images/fotografia/retrato-07.jpg" alt="Calle urbana fotografiada en blanco y negro" loading="lazy">
+                        <figcaption>Ciudad · Memoria urbana</figcaption>
+                        <label class="carousel-arrow carousel-arrow-left" for="photo-slide-6" aria-label="Ver fotografía anterior">‹</label>
+                        <label class="carousel-arrow carousel-arrow-right" for="photo-slide-8" aria-label="Ver fotografía siguiente">›</label>
+                    </figure>
+                    <figure class="carousel-slide carousel-slide-8">
+                        <img class="carousel-image carousel-image-contain" src="images/fotografia/retrato-08.jpg" alt="Escena cotidiana urbana en blanco y negro" loading="lazy">
+                        <figcaption>Ciudad · Escena cotidiana</figcaption>
+                        <label class="carousel-arrow carousel-arrow-left" for="photo-slide-7" aria-label="Ver fotografía anterior">‹</label>
+                        <label class="carousel-arrow carousel-arrow-right" for="photo-slide-1" aria-label="Volver a la primera fotografía">›</label>
+                    </figure>
+                </div>
+
+                <div class="carousel-indicators" aria-label="Seleccionar fotografía">
+                    <label class="carousel-indicator indicator-1" for="photo-slide-1" aria-label="Mostrar fotografía 1"></label>
+                    <label class="carousel-indicator indicator-2" for="photo-slide-2" aria-label="Mostrar fotografía 2"></label>
+                    <label class="carousel-indicator indicator-3" for="photo-slide-3" aria-label="Mostrar fotografía 3"></label>
+                    <label class="carousel-indicator indicator-4" for="photo-slide-4" aria-label="Mostrar fotografía 4"></label>
+                    <label class="carousel-indicator indicator-5" for="photo-slide-5" aria-label="Mostrar fotografía 5"></label>
+                    <label class="carousel-indicator indicator-6" for="photo-slide-6" aria-label="Mostrar fotografía 6"></label>
+                    <label class="carousel-indicator indicator-7" for="photo-slide-7" aria-label="Mostrar fotografía 7"></label>
+                    <label class="carousel-indicator indicator-8" for="photo-slide-8" aria-label="Mostrar fotografía 8"></label>
+                </div>
+
+                <div class="carousel-thumbnails">
+                    <label class="carousel-thumbnail thumbnail-1" for="photo-slide-1"><img src="images/fotografia/retrato-01.jpg" alt="Mostrar fotografía 1" loading="lazy"></label>
+                    <label class="carousel-thumbnail thumbnail-2" for="photo-slide-2"><img src="images/fotografia/retrato-02.jpg" alt="Mostrar fotografía 2" loading="lazy"></label>
+                    <label class="carousel-thumbnail thumbnail-3" for="photo-slide-3"><img src="images/fotografia/retrato-03.jpg" alt="Mostrar fotografía 3" loading="lazy"></label>
+                    <label class="carousel-thumbnail thumbnail-4" for="photo-slide-4"><img src="images/fotografia/retrato-04.jpg" alt="Mostrar fotografía 4" loading="lazy"></label>
+                    <label class="carousel-thumbnail thumbnail-5" for="photo-slide-5"><img src="images/fotografia/retrato-05.jpeg" alt="Mostrar fotografía 5" loading="lazy"></label>
+                    <label class="carousel-thumbnail thumbnail-6" for="photo-slide-6"><img src="images/fotografia/retrato-06.jpg" alt="Mostrar fotografía 6" loading="lazy"></label>
+                    <label class="carousel-thumbnail thumbnail-7" for="photo-slide-7"><img src="images/fotografia/retrato-07.jpg" alt="Mostrar fotografía 7" loading="lazy"></label>
+                    <label class="carousel-thumbnail thumbnail-8" for="photo-slide-8"><img src="images/fotografia/retrato-08.jpg" alt="Mostrar fotografía 8" loading="lazy"></label>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             DETALLE DEL PROYECTO DE BRANDING
+        ====================================================== -->
+        <section class="portfolio-detail branding-detail" id="manual-branding">
+            <div class="detail-heading">
+                <div>
+                    <span class="section-kicker">Branding</span>
+                    <h2>Identidad construida con intención.</h2>
+                </div>
+                <p>Manual de marca desarrollado como parte del proceso de construcción de identidad visual de una marca personal.</p>
+            </div>
+
+            <div class="pdf-showcase">
+                <div class="pdf-copy">
+                    <span class="media-label">Manual de identidad</span>
+                    <h3>Manual de marca</h3>
+                    <p>Explora la construcción visual, paleta, tipografía, logotipo y lineamientos de aplicación de la marca.</p>
+                    <div class="media-actions">
+                        <a class="media-button media-button-primary" href="brending/manualdemarca.pdf" target="_blank" rel="noopener">Abrir manual ↗</a>
+                        <a class="media-button media-button-secondary" href="brending/manualdemarca.pdf" download>Descargar PDF</a>
+                    </div>
+                </div>
+                <div class="pdf-preview">
+                    <object data="brending/manualdemarca.pdf" type="application/pdf">
+                        <p>El navegador no puede mostrar el PDF. <a href="brending/manualdemarca.pdf" target="_blank" rel="noopener">Abrir el manual de marca</a></p>
+                    </object>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             DETALLE DEL PROYECTO DE DISEÑO WEB
+        ====================================================== -->
+        <section class="portfolio-detail web-detail" id="proyecto-web">
+            <div class="detail-heading">
+                <div>
+                    <span class="section-kicker">Diseño web</span>
+                    <h2>Del diseño a la experiencia.</h2>
+                </div>
+                <p>Presentación audiovisual del proceso y resultado del proyecto de diseño web.</p>
+            </div>
+
+            <div class="video-showcase">
+                <video class="portfolio-video" controls preload="metadata" playsinline>
+                    <source src="web/video.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir este video.
+                </video>
+                <div class="video-information">
+                    <span class="media-label">Experiencia digital</span>
+                    <h3>Página web</h3>
+                    <p>Diseño responsive, arquitectura visual y desarrollo de una experiencia digital enfocada en presentar proyectos de manera clara elegante y atractiva.</p>
+                    <a class="media-button media-button-primary" href="web/video.mp4" target="_blank" rel="noopener">Abrir video ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="process reveal"><span class="section-kicker">Mi proceso</span>
+            <h2>De la idea al resultado.</h2>
+            <ol>
+                <li><b>01</b>
+                    <div>
+                        <h3>Descubrir</h3>
+                        <p>Escucho tu historia, objetivos y necesidades.</p>
+                    </div>
+                </li>
+                <li><b>02</b>
+                    <div>
+                        <h3>Explorar</h3>
+                        <p>Construyo conceptos, referencias y rutas visuales.</p>
+                    </div>
+                </li>
+                <li><b>03</b>
+                    <div>
+                        <h3>Crear</h3>
+                        <p>Diseño, produzco y ajusto cada detalle.</p>
+                    </div>
+                </li>
+                <li><b>04</b>
+                    <div>
+                        <h3>Entregar</h3>
+                        <p>Organizo los archivos y acompaño su aplicación.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section class="contact reveal" id="contacto">
+            <div><span class="section-kicker light">¿Creamos algo juntos?</span>
+                <h2>Tu próxima gran idea puede empezar aquí.</h2>
+                <p>Cuéntame qué quieres comunicar y encontraremos la mejor forma de hacerlo visible.</p>
+            </div>
+            <form id="contact-form">
+<input type="hidden" id="contact-recipient" value="trujillolaura002@gmail.com"><label>Nombre<input name="nombre" autocomplete="name" required></label><label>Correo<input
+                        type="email" name="correo" autocomplete="email" required></label><label>Servicio<select
+                        name="servicio">
+                        <option>Fotografía</option>
+                        <option>Branding</option>
+                        <option>Ilustración</option>
+                        <option>Diseño web</option>
+                        <option>Proyecto integral</option>
+                    </select></label><label>Cuéntame sobre tu proyecto<textarea name="mensaje" rows="4"
+                        required></textarea></label><button class="btn lightbtn" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer><img src="images/logo.png" alt="Laura Productora Multimedia">
+        <p>Fotografía · Branding · Ilustración · Web</p>
+        <p>© 2026 Hecho con 💖 desde Bogotá.</p>
+    </footer>
+    <script>
+        const m = document.querySelector('.menu'), n = document.querySelector('#nav'); m.addEventListener('click', () => { const o = m.getAttribute('aria-expanded') === 'true'; m.setAttribute('aria-expanded', String(!o)); n.classList.toggle('open') }); document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => { n.classList.remove('open'); m.setAttribute('aria-expanded', 'false') })); const progress = document.querySelector('.progress'); const glow = document.querySelector('.cursor-glow'); window.addEventListener('scroll', () => { const h = document.documentElement; progress.style.transform = `scaleX(${h.scrollTop / (h.scrollHeight - h.clientHeight)})` }); window.addEventListener('pointermove', e => { glow.style.transform = `translate(${e.clientX - 180}px,${e.clientY - 180}px)` }); const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target) } }), { threshold: .12 }); document.querySelectorAll('.reveal,.service,.project,.process li').forEach(el => io.observe(el)); document.querySelectorAll('.tilt-card').forEach(card => { card.addEventListener('pointermove', e => { const r = card.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; card.style.transform = `perspective(900px) rotateX(${-y * 5}deg) rotateY(${x * 6}deg) translateY(-6px)` }); card.addEventListener('pointerleave', () => card.style.transform = '') }); document.querySelector('#contact-form').addEventListener('submit', e => {
+            e.preventDefault();
+            const form = e.currentTarget;
+            const recipient = document.querySelector('#contact-recipient').value;
+            const nombre = form.querySelector('[name="nombre"]').value.trim();
+            const correo = form.querySelector('[name="correo"]').value.trim();
+            const servicio = form.querySelector('[name="servicio"]').value;
+            const mensaje = form.querySelector('[name="mensaje"]').value.trim();
+            const subject = encodeURIComponent(`Nuevo proyecto de ${servicio} · ${nombre}`);
+            const body = encodeURIComponent(`Nombre: ${nombre}\nCorreo: ${correo}\nServicio: ${servicio}\n\nProyecto:\n${mensaje}`);
+            window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+        });</script>
+</body>
+
+</html>
